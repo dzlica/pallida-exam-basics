@@ -32,8 +32,8 @@ The application is accepted if:
 
 ###  What is the difference between a function and a method? [2p]
 #### Your answer:
-[add your answer here]
+a method is attached to an object, it is a special function it this way. In Java functions are static.
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
-[add your answer here]
+it is a special method, with the same name as the class name. You invoke it, when you creat the object, so it gives data to the object. But you can have a constructor with no parameters in it.
