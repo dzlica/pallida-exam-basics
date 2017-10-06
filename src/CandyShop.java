@@ -23,7 +23,6 @@ public class CandyShop {
 
     int lollipopPrice = 10;
     int candyPrice = 20;
-    //int sugarPrice = 100;
 
     // we can create lollipops and candies store them in the CandyShop's storage
     int candies = 0;
@@ -56,7 +55,6 @@ public class CandyShop {
             this.candies -= numberSell;
             this.money += this.candyPrice * numberSell;
         }
-
         if (type.equals(LOLLIPOP)) {
             this.lollipops -= numberSell;
             this.money += this.lollipopPrice * numberSell;
