@@ -44,9 +44,9 @@ public class CandyShop {
     }
 
     // We can raise the prices of all candies and lollipops with a given percentage
-    public void raise(int giveNumber) {
-        this.candyPrice = this.candyPrice + (this.candyPrice * (giveNumber / 100));
-        this.lollipopPrice = this.lollipopPrice + (this.lollipopPrice * (giveNumber / 100));
+    public void raise(int giveRaiseNumber) {
+        this.candyPrice = this.candyPrice + (this.candyPrice * (giveRaiseNumber / 100));
+        this.lollipopPrice = this.lollipopPrice + (this.lollipopPrice * (giveRaiseNumber / 100));
     }
 
     // If we sell sweets the income will be increased by the price of the sweets and we delete it from the inventory
@@ -66,7 +66,7 @@ public class CandyShop {
     // If we buy sugar we can raise the CandyShop's amount of sugar and reduce the income by the price of it.
     public void buySugar(int sugarAmount) {
         this.sugar += sugarAmount;
-        this.money -= sugarAmount/10;
+        this.money -= Math.round(sugarAmount/10);
     }
     // "Inventory: 3 candies, 2 lollipops, Income: 100, Sugar: 400gr"
 
